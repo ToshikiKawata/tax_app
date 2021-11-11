@@ -15,6 +15,17 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
         itemTableView.dataSource = self
         
         costsArray.removeAll()
+        costField.addTarget(self, action: #selector(costFieldChange(sender:)), for: .editingChanged)
+    }
+    
+    @objc func costFieldChange(sender: UITextField) {
+        if taxController.selectedSegmentIndex == 0 {
+            calc(tax: 1.1)
+        } else {
+            calc(tax: 1.08)
+        }
+        
+        showLabel.text = addTaxCostString
     }
     
     /* 変数の追加 */
@@ -30,7 +41,7 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
     
     @IBOutlet weak var taxController: UISegmentedControl!
     
-
+    
     @IBOutlet weak var itemTableView: UITableView!
     
     
@@ -46,7 +57,7 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
     
     
     func calc(tax:Double) {
-        cost = Double(costField.text!)!
+        cost = Double(costField.text!) ?? 0.0
         addTaxCost = cost * Double(tax)
         print(addTaxCost)
         
@@ -55,14 +66,21 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
     }
     
     @IBAction func addButton(_ sender: Any) {
-        costsArray.append(contentsOf: [addTaxCost])
-        print(costsArray)
-        UserDefaults.standard.set(costsArray, forKey: "item")
-        
-        costField.text = ""
-        showLabel.text = ""
-        
-        self.itemTableView.reloadData()
+        if costField.text != "" {
+            costsArray.append(contentsOf: [addTaxCost])
+            print(costsArray)
+            UserDefaults.standard.set(costsArray, forKey: "item")
+            
+            costField.text = ""
+            showLabel.text = ""
+            
+            self.itemTableView.reloadData()
+        }else{
+            print("エラー")
+        }
+    }
+    
+    @IBAction func textChange(_ sender: Any) {
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
