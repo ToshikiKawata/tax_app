@@ -65,7 +65,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="TableViewCell" id="Ohy-Qp-3yH">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="Ohy-Qp-3yH" userLabel="ItemTableView">
                                         <rect key="frame" x="0.0" y="44.5" width="374" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Ohy-Qp-3yH" id="d8s-jU-XnC">
@@ -91,7 +91,7 @@
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="costField" destination="Aym-bQ-MmH" id="G0o-o0-ncj"/>
-                        <outlet property="itemTableView" destination="Ohy-Qp-3yH" id="ESL-uc-SD7"/>
+                        <outlet property="itemTableView" destination="Rdd-dl-7oe" id="pD8-rr-hlS"/>
                         <outlet property="showLabel" destination="yYm-cw-4m3" id="X62-vi-WRo"/>
                         <outlet property="taxController" destination="4kR-kn-PdN" id="pgB-Ag-j0f"/>
                     </connections>
