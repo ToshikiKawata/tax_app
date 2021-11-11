@@ -16,6 +16,7 @@
 		976EB1DD27395EA3002E18A2 /* tax_appTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 976EB1DC27395EA3002E18A2 /* tax_appTests.swift */; };
 		976EB1E727395EA3002E18A2 /* tax_appUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 976EB1E627395EA3002E18A2 /* tax_appUITests.swift */; };
 		976EB1E927395EA3002E18A2 /* tax_appUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 976EB1E827395EA3002E18A2 /* tax_appUITestsLaunchTests.swift */; };
+		976EB1F8273CB554002E18A2 /* addViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 976EB1F7273CB554002E18A2 /* addViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		976EB1E227395EA3002E18A2 /* tax_appUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = tax_appUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		976EB1E627395EA3002E18A2 /* tax_appUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tax_appUITests.swift; sourceTree = "<group>"; };
 		976EB1E827395EA3002E18A2 /* tax_appUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tax_appUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		976EB1F7273CB554002E18A2 /* addViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				976EB1C727395EA1002E18A2 /* SceneDelegate.swift */,
 				976EB1C927395EA1002E18A2 /* ViewController.swift */,
 				976EB1CB27395EA1002E18A2 /* Main.storyboard */,
+				976EB1F7273CB554002E18A2 /* addViewController.swift */,
 				976EB1CE27395EA3002E18A2 /* Assets.xcassets */,
 				976EB1D027395EA3002E18A2 /* LaunchScreen.storyboard */,
 				976EB1D327395EA3002E18A2 /* Info.plist */,
@@ -260,6 +263,7 @@
 			files = (
 				976EB1CA27395EA1002E18A2 /* ViewController.swift in Sources */,
 				976EB1C627395EA1002E18A2 /* AppDelegate.swift in Sources */,
+				976EB1F8273CB554002E18A2 /* addViewController.swift in Sources */,
 				976EB1C827395EA1002E18A2 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
