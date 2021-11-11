@@ -91,7 +91,7 @@
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="costField" destination="Aym-bQ-MmH" id="G0o-o0-ncj"/>
-                        <outlet property="itemTableView" destination="Rdd-dl-7oe" id="2L5-st-KHu"/>
+                        <outlet property="itemTableView" destination="Ohy-Qp-3yH" id="ESL-uc-SD7"/>
                         <outlet property="showLabel" destination="yYm-cw-4m3" id="X62-vi-WRo"/>
                         <outlet property="taxController" destination="4kR-kn-PdN" id="pgB-Ag-j0f"/>
                     </connections>

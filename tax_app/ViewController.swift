@@ -30,6 +30,7 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
     
     @IBOutlet weak var taxController: UISegmentedControl!
     
+    
     @IBOutlet weak var itemTableView: UITableView!
     
     @IBAction func taxChanger(_ sender: Any) {
